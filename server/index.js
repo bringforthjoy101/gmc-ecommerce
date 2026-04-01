@@ -2,7 +2,7 @@
 // server/index.js — Express entry point
 // ─────────────────────────────────────────────────────────────────────────────
 'use strict';
-require('dotenv').config({ path: './config/.env' });
+require('dotenv').config({ path: require('path').join(__dirname, 'config/.env') });
 
 const express  = require('express');
 const mongoose = require('mongoose');
