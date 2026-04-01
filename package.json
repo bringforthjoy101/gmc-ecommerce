@@ -1,0 +1,13 @@
+{
+  "name": "gmc-ecommerce",
+  "version": "1.0.0",
+  "description": "GMC MERN E-Commerce App",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "install": "cd server && npm install",
+    "start": "cd server && node index.js",
+    "build": "cd server && npm install"
+  }
+}
