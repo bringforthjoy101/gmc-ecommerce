@@ -1,4 +1,3 @@
 node_modules/
 server/config/.env
 client/build/
-.DS_Store
