@@ -27,7 +27,7 @@ app.get('/api/health', (_, res) => res.json({ status: 'ok', timestamp: new Date(
 // ── Serve React build ─────────────────────────────────────────────────────────
 const publicDir = path.join(__dirname, 'public');
 app.use(express.static(publicDir));
-app.get('*', (_, res) => res.sendFile(path.join(publicDir, 'index.html')));
+app.get(/.*/, (_, res) => res.sendFile(path.join(publicDir, 'index.html')));
 
 // ── Database + server start ───────────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
